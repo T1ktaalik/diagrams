@@ -7,7 +7,7 @@ import vueDevTools from 'vite-plugin-vue-devtools'
 import tailwindcss from '@tailwindcss/postcss';
 // https://vite.dev/config/
 export default defineConfig({
-  
+  base: "",
   plugins: [
     vue(),
     vueJsx(),
