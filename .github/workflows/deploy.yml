@@ -37,10 +37,10 @@ jobs:
           cache-dependency-path: barsa-2-diagram/package-lock.json
 
       - name: Install dependencies
-        run: cd barsa-vue-diagram && npm ci
+        run: cd barsa-2-diagram && npm ci
 
       - name: Build application
-        run: cd barsa-vue-diagram && npm run build
+        run: cd barsa-2-diagram && npm run build
 
       - name: Configure AWS credentials for Yandex Cloud
         run: |
