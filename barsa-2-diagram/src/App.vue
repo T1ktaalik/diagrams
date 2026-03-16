@@ -11,11 +11,8 @@
       План производства работ
     <RouterLink to="/parking">Parking</RouterLink>
     </div>
-    <h1 class="bg-red-300">Hello, world</h1>
-
 <RouterView />
   </div>
-
 </template>
 <style>
 @import "tailwindcss";
