@@ -1,11 +1,11 @@
 <template>
   <div>
-    <div>
+  <!--   <div>
       <h3 class="text-center uppercase">Парковка</h3>
     </div>
-    
-    <div id="sequence-diagram" ref="diagramContainer">
-      <pre class="mermaid">{{ sequenceDiagram }}</pre>
+     -->
+    <div id="sequence-diagram" ref="diagramContainer" class="overflow-auto">
+      <pre class="mermaid overflow-auto">{{ parkingGantt }}</pre>
     </div>
   </div>
 </template>
@@ -14,18 +14,21 @@
 import { onMounted, ref } from 'vue'
 import mermaid from 'mermaid'
 
-const sequenceDiagram = ref(`
-  sequenceDiagram
-    participant Заказчик
-    participant ГИП
-    participant Архитектор
-    participant Конструктор
-    participant Генпланист
-    Архитектор ->> Конструктор: задание проемов, приямков, машиномест
-    Генпланист ->> ГИП: Разбивочный план (координаты осей)
-    Генпланист ->> ГИП: отметка 0.000
-    ГИП ->> Заказчик: Задание на котлован и разбивку осей
+const parkingGantt = ref(`
+  ---
+  title: Парковка
+  ---
+   gantt
+    
+    dateFormat  YYYY-MM-DD
+    tickInterval 4w
+    axisFormat %m
+    section Заказчик
+      Таня, привет: 2026-04-01, 14d
+      Временные дороги и краны: 2026-04-15, 14d
+    
 `)
+
 
 onMounted(async () => {
   try {
