@@ -8,7 +8,6 @@
       ЖК Барса 2
     </div>
     <div>
-      План производства работ
     <RouterLink to="/parking">Parking</RouterLink>
     </div>
 <RouterView />
