@@ -15,7 +15,6 @@ import { onMounted, ref } from 'vue'
 import mermaid from 'mermaid'
 
 const parkingGantt = ref(`
-
   ---
   title: Парковка
   ---
