@@ -123,7 +123,8 @@ onMounted(async () => {
       theme: 'default',
       securityLevel: 'loose',
     })
-    
+    let variable = 1
+    let перменная = 2
     // Небольшая задержка для гарантии рендеринга DOM
     setTimeout(() => {
       mermaid.run()
