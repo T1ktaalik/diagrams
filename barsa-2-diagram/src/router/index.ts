@@ -3,6 +3,7 @@ import ParkingDiagram from '@/pages/ParkingDiagram.vue'
 const router = createRouter({
   history: createWebHashHistory(),
   routes: [
+    { path: '/', redirect: '/parking' },
     { path: '/parking', component: ParkingDiagram }
   ],
 })
