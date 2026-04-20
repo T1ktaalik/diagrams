@@ -4,7 +4,7 @@ const router = createRouter({
   history: createWebHashHistory(),
   routes: [
     { path: '/', redirect: '/parking' },
-    { path: '/parking', component: ParkingDiagram }
+    { path: '/parking', component: ParkingDiagram },
   ],
 })
 
